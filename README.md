@@ -49,20 +49,32 @@ This program demonstrates how the bitwise AND, OR, NOT, XOR, left shift, and rig
  - `Right` Shift divides a number by 2ⁿ.
  
 ### Sample Output:
-Enter the bit position to be set: 5
-Enter the bit position to be reset: 3
-Your number is:56
-Your number is:16
-## 🔧 Program 2: Set and Reset Specific Bits
+Enter the bit position to be set: 5               
+Enter the bit position to be reset: 3               
+Your number is:56            
+Your number is:16                
+##  Program 2: Set and Reset Specific Bits
 
-This program illustrates how to **manipulate individual bits** of an integer using bitwise operations — specifically, how to **set** or **reset** (clear) a specific bit. These techniques are fundamental in system-level programming where memory efficiency and control over hardware states are crucial.
+This program illustrates how to **set/change individual bits** of an integer using bitwise operations. 
 
-### 🛠️ Setting a Bit
-To **set** a specific bit in a number, we use the **bitwise OR (`|`)** operator along with a **bitmask**.  
+###  Setting a Bit
+To **set** a bit in a number, we use the **bitwise OR (`|`)** operator with a **bitmask**.  
 A bitmask is a binary number where only the target bit is `1` and all others are `0`.
+To reset a bit we use **bitwise AND (`&`)** with the complement (~) of a mask where the target bit is 1.
 
-For example, if you want to set bit position 3:
-```cpp
-int mask = 1 << 3;
-number = number | mask;
+### Sample Output:
+AND: 0               
+OR:6                  
+NOT: -5              
+XOR: 6                 
+right shift: 1                
+left shift: 4               
+
+## Conclusion 
+Bitwise operators let you work directly with the individual bits of data. They’re useful when you need to control things very precisely, like when dealing with hardware or saving memory. The programs above show how to use these operators for simple tasks like turning specific bits on or off, or combining bits using logic.
+
+
+
+
+
 
