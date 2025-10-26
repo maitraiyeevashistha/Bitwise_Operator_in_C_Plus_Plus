@@ -1,8 +1,5 @@
 #  Bitwise Operators in C++
 
-## Name: Maitraiyee Vashistha
-## PRN: 24070123057
-## Division: ENTC-A3
 ## Title: Understanding and using Bitwise Operators in C++
 ---
 ## Aim :
